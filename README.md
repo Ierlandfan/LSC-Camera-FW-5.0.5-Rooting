@@ -7,9 +7,9 @@ Put the sdcard in the device.
 Power off the camera (If on)
 Hold the reset button, power on and keep holding the reset button for 5 seconds
 After a minute or so port 8090 will be open.
-TBD: Those aother files will probably work to get onvif and telnet going, needs testing. 
+TBD: Those other files will probably work to get onvif and telnet going, needs testing. 
  
-
+Password for port 8090: admin / admin
 
 
 (How this was found)
