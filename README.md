@@ -51,3 +51,7 @@ cp camera-5.0.5.bin mycamera-modified-5.0.5.bin
 (The cp command is to copy the original firmware file ( camera-5.0.5.bin ) as a new file (mycamera-5.0.5.bin) that gets the new cramfs (my.cramfs)
 sudo dd conv=notrunc if=my.cramfs of=mycamera-modified-5.0.5.bin bs=1 seek=2949120
 (The dd command will apply the new cramfs (my.cramfs) to the Firmware file (mycamera-modified-5.0.5.bin) we newly created and seek number is the offset we found in binwalk)
+
+Bootcommand:
+
+bootcmd=sf probe 0; sf read 0x21000000 0x50000 0x280000; bootm 0x21000000
