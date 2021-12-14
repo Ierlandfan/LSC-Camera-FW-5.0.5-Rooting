@@ -1,5 +1,19 @@
 LSC 5.0.5 FW repository
 
+Download all the files in mmc directory to SDCard
+Edit PPsFactoryTool.txt with Notepad++ (Preferably) 
+!Change only the WIFI SSID and Password!
+Put the sdcard in the device.
+Power off the camera (If on)
+Hold the reset button, power on and keep holding the reset button for 5 seconds
+After a minute or so port 8090 will be open.
+TBD: Those aother files will probably work to get onvif and telnet going, needs testing. 
+ 
+
+
+
+(How this was found)
+
 Binwalk camera-5.0.5.bin (Most Important output) 
 
 2949120 0x2D0000 CramFS filesystem, little endian, size: 4595712, version 2, sorted_dirs, CRC 0x5DDF61C8, edition 1, 1119 blocks, 3 files
